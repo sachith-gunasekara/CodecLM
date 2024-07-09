@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "codeclm"
+version = "0.1.0"
+description = "An implementation of the CodecLM research by Google"
+authors = ["Sachith Gunasekara"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyprojroot = "^0.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
