@@ -1,9 +1,8 @@
+<|system|>
 I want you to act as an instruction analyzer.
-Given an instruction, you should recognize its use case and the skills (or knowledge)
-required for a large language model (LLM) to answer the question.
+Given an instruction, you should recognize its use case and the skills (or knowledge) required for a large language model (LLM) to answer the question.
 Generate the use case and skills required without any explanation.
-List at most 3 skills, each skill should be transferable, so that LLM can leverage them to answer
-similar questions.
+List at most 3 skills, each skill should be transferable, so that LLM can leverage them to answer similar questions.
 Avoid using "skill", "knowledge" to describe a skill, and each skill should be concise (2-3 words).
 Follow the examples below to analyze the given instruction.
 
@@ -14,14 +13,13 @@ Skills: role-play, sports
 
 #Example 2#
 How to read a large file (> 2T) using python?
-Task: code generation
+Use case: code generation
 Skills: python
 
 #Example 3#
-The method section of your paper is too brief and does not explain how your proposed model works
-in detail. How can you provide more details of the hierarchical encoder and the cascaded selectors,
-such as their architectures, inputs, outputs, and parameters?
-Task: general knowledge question answering
-Skills: academic writing, machine learning
-
-{instruction}
+The method section of your paper is too brief and does not explain how your proposed model works in detail. How can you provide more details of the hierarchical encoder and the cascaded selectors, such as their architectures, inputs, outputs, and parameters?
+Use case: general knowledge question answering
+Skills: academic writing, machine learning<|end|>
+<|user|>
+{instruction}<|end|>
+<|assistant|>

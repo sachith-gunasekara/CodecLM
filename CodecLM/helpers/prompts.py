@@ -1,7 +1,12 @@
 from pyprojroot import here
 
-def get_encode_prompt_template():
-    filename = 'prompts/encode.txt'
+def _get_encode_prompt_template() -> str:
+    filename = 'codeclm/prompts/encode.txt'
 
     with open(here(filename), 'r') as f:
-        pass
+        prompt = f.read()
+    
+    return prompt
+
+def get_encode_prompt(instruction: str) -> str:
+    return _get_encode_prompt_template().format(instruction)
