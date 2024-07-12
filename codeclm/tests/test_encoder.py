@@ -14,7 +14,7 @@ class TestEncoder(unittest.TestCase):
 
         metadata = encoder.generate_metadata()
 
-        print(metadata)
+        print('\n', metadata)
 
         self.assertIsInstance(metadata, dict)
         self.assertIsInstance(metadata['use_case'], str)

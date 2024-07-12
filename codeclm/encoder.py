@@ -1,4 +1,12 @@
+from dataclasses import dataclass
+
 from codeclm.helpers.metadata import get_metadata
+
+@dataclass
+class Metadata:
+    use_case: str
+    skills: list
+
 
 class Encoder:
     instruction: str
@@ -10,4 +18,4 @@ class Encoder:
     def generate_metadata(self) -> tuple:
         self.metadata = get_metadata(self.instruction)
 
-        return self
+        return self.metadata

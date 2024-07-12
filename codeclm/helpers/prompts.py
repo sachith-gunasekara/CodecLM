@@ -9,4 +9,4 @@ def _get_encode_prompt_template() -> str:
     return prompt
 
 def get_encode_prompt(instruction: str) -> str:
-    return _get_encode_prompt_template().format(instruction)
+    return _get_encode_prompt_template().format(instruction=instruction)
